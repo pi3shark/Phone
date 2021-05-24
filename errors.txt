@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/phone/NVL phone.rpy", line 144: u'xyimg' is not a keyword argument or valid child for the button statement.
+    xyimg 600,900 background "#444"
+         ^
+
+File "game/phone/NVL phone.rpy", line 149: style property img is not known.
+    img 20
+       ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Sun May 23 09:41:42 2021

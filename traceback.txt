@@ -1,0 +1,76 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/phone/NVL phone.rpy", line 183, in script
+    $ preferences.transitions = 0 # set the transitions
+  File "game/phone/NVL phone.rpy", line 183, in script
+    $ preferences.transitions = 0 # set the transitions
+  File "renpy/common/00nvl_mode.rpy", line 380, in do_display
+    **display_args)
+  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
+    return __nvl_show_screen("nvl", items=[ ])
+  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
+    return renpy.get_widget(screen_name, "what", config.nvl_layer)
+  File "game/phone/NVL phone.rpy", line 42, in execute
+    screen nvl(dialogue, items=None):
+  File "game/phone/NVL phone.rpy", line 42, in execute
+    screen nvl(dialogue, items=None):
+  File "game/phone/NVL phone.rpy", line 45, in execute
+    frame:
+  File "game/phone/NVL phone.rpy", line 48, in execute
+    frame: # Top bar
+  File "game/phone/NVL phone.rpy", line 54, in execute
+    text nvl_phone.name
+Exception: Cannot display None as text.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\bootstrap.py", line 316, in bootstrap
+    renpy.main.main()
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\main.py", line 578, in main
+    run(restart)
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\main.py", line 143, in run
+    renpy.execution.run_context(True)
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\execution.py", line 908, in run_context
+    context.run()
+  File "game/phone/NVL phone.rpy", line 183, in script
+    $ preferences.transitions = 0 # set the transitions
+  File "game/phone/NVL phone.rpy", line 183, in script
+    $ preferences.transitions = 0 # set the transitions
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "renpy/common/00nvl_mode.rpy", line 380, in do_display
+    **display_args)
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\character.py", line 547, in display_say
+    what_text = show_function(who, what_string)
+  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
+    return __nvl_show_screen("nvl", items=[ ])
+  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
+    return renpy.get_widget(screen_name, "what", config.nvl_layer)
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\display\screen.py", line 1299, in get_widget
+    screen.update()
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\display\screen.py", line 625, in update
+    self.screen.function(**self.scope)
+  File "game/phone/NVL phone.rpy", line 42, in execute
+    screen nvl(dialogue, items=None):
+  File "game/phone/NVL phone.rpy", line 42, in execute
+    screen nvl(dialogue, items=None):
+  File "game/phone/NVL phone.rpy", line 45, in execute
+    frame:
+  File "game/phone/NVL phone.rpy", line 48, in execute
+    frame: # Top bar
+  File "game/phone/NVL phone.rpy", line 54, in execute
+    text nvl_phone.name
+  File "D:\ART\BB\FT\RENPY\renpy-7.1.3-sdk\renpy\text\text.py", line 1471, in __init__
+    raise Exception("Cannot display {0!r} as text.".format(i))
+Exception: Cannot display None as text.
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+teft f 1.0
+Sun May 23 21:44:58 2021
